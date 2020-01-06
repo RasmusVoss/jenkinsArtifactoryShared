@@ -1,0 +1,16 @@
+{
+	"UploadWithTreeHash": [{
+        "patterns": "vars/downloadFromArtifactory.groovy",
+        "download": ".",
+        "treehash": "vars",
+        "branch": false
+    }],
+    "UploadWithBranch": [{
+        "patterns": "vars/downloadFromArtifactory.groovy",
+        "download": "."
+    }],
+    "UploadMultipleWithBranch": [{
+        "patterns": "resources/*",
+        "download": "."
+    }]
+}

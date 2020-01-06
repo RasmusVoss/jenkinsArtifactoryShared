@@ -1,0 +1,43 @@
+@Library('pilot-jenkins-library@artiDownload') _
+
+pipeline{
+    agent{
+        label "Linux"
+    }
+    options {
+        disableConcurrentBuilds()
+        timestamps()
+    }
+    stages{
+        stage ("UploadWithTreeHash") {
+            steps {
+                uploadToArtifactory("UploadWithTreeHash")
+            }
+        }  
+        stage ("Download WithTreeHash") {
+            steps {
+                downloadFromArtifactory("UploadWithTreeHash")
+            }
+        }
+        stage ("UploadWithBranch") {
+            steps {
+                uploadToArtifactory("UploadWithBranch")
+            }
+        }  
+        stage ("Download WithBranch") {
+            steps {
+                downloadFromArtifactory("UploadWithBranch")
+            }
+        }
+        stage ("Upload multiple files Withbranch") {
+            steps {
+                uploadToArtifactory("UploadMultipleWithBranch")
+            }
+        }
+        stage ("Download multiple files Withbranch") {
+            steps {
+                downloadFromArtifactory("UploadMultipleWithBranch")
+            }
+        }
+    }
+}

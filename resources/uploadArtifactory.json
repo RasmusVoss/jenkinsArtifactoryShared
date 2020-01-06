@@ -1,0 +1,11 @@
+{
+	"UploadWithTreeHash": [{
+		"uploadPath": "Developer_Packages/TEST/app-components/UploadWithTreeHash/"
+	}],
+	"UploadWithBranch": [{
+		"uploadPath": "Developer_Packages/TEST/app-components/UploadWithBranch/"
+	}],
+	"UploadMultipleWithBranch":[{
+		"uploadPath": "Developer_Packages/TEST/app-components/UploadMultipleWithBranch/"
+	}] 
+}
