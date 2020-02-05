@@ -1,11 +1,16 @@
 {
 	"UploadWithTreeHash": [{
-		"uploadPath": "Developer_Packages/TEST/app-components/UploadWithTreeHash/"
+		"uploadPath": "mxc-development-local/MXC/ccu-components/UploadWithTreeHash/"
 	}],
 	"UploadWithBranch": [{
-		"uploadPath": "Developer_Packages/TEST/app-components/UploadWithBranch/"
+		"uploadPath": "mxc-development-local/MXC/ccu-components/UploadWithBranch/"
 	}],
 	"UploadMultipleWithBranch":[{
-		"uploadPath": "Developer_Packages/TEST/app-components/UploadMultipleWithBranch/"
-	}] 
+		"uploadPath": "mxc-development-local/MXC/ccu-components/UploadMultipleWithBranch/"
+	}],
+	"UploadWithSubPath":[{
+		"uploadPath": "mxc-development-local/MXC/ccu-components/UploadMWithSubPath/",
+		"subPath": "ccu",
+        "buildInfo": true
+	}]
 }

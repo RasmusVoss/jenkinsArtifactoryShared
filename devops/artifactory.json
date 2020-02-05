@@ -1,16 +1,20 @@
 {
 	"UploadWithTreeHash": [{
-        "patterns": "vars/downloadFromArtifactory.groovy",
+        "patterns": "src/kernel/build_subsys.sh",
         "download": ".",
-        "treehash": "vars",
+        "treehash": "src/kernel",
         "branch": false
     }],
     "UploadWithBranch": [{
-        "patterns": "vars/downloadFromArtifactory.groovy",
+        "patterns": "src/kernel/build_subsys.sh, libraryConfig.json",
         "download": "."
     }],
     "UploadMultipleWithBranch": [{
-        "patterns": "resources/*",
+        "patterns": "build_tools/*",
+        "download": "."
+    }],
+    "UploadWithSubPath": [{
+        "patterns": "src/kernel/build_subsys.sh",
         "download": "."
     }]
 }

@@ -12,9 +12,11 @@ There are 2 separate functions uploadToArtifactory and downloadFromArtifactory, 
 
 The functionality is, read the shared library file for the root path to where to find find or upload the files to, then add the information from the file in your local repository.
 
-#### There are currently 4 different parameters to set in the local json file. 
+#### There are currently 4 different parameters to set in the local json file.
 
-1.    patterns: This the pattern of files to upload, this can be a file or a path /*
+1.    patterns: This the pattern of files to upload, this can be a file or a path /* or a commaseperated list of patterns.
 1.    download: This is the path where files are being downloaded to when using the downloadFromArtifactory function
 1.    treehash: If treehash is configured the file / files will be uploaded with an extra property the git tree hash of the folder configured for treehash
 1.    branch: Use branch in the upload path, this will append the GIT_BRANCH to the upload / download path. if set to true or left out from configuration
+2.    subPath: will append a subpath to the upload i.e. developerPackages/GIT_BRANCH/SUBPATH
+3.    buildInfo: If this is set to true the build artifactory build information will be appended to the jenkins job.
